@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      html, body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-itmes: center;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Badhuset Inloggad</title>
+  </head>
+  <body>
+    <div>
+      <h1>You are logged in. Welcome!</h1>
+      <button type="button" name="button" onclick="logout()" class="submit">Logout</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function logout() {
+      location.replace("index.html");
+    }
+  </script>
+</html>

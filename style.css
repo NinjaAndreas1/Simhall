@@ -1,0 +1,153 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #23e3c9;
+}
+
+/* image */
+
+main > .imgDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+main > .imgDiv > .input {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+/* btn style */
+
+.data-btn {
+  padding: 40px 100px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #00ffd9;
+  transition: 0.1s;
+  font-weight: bolder;
+  font-size: 25px;
+  user-select: none;
+  box-shadow: 0 0 20px black;
+}
+
+.data-btn:hover {
+  background: #04b59b;
+  transition: 0.3s;
+}
+
+/* login */
+
+main > .imgDiv > .login {
+  background: white;
+  position: fixed;
+}
+
+main > .imgDiv > .login > .container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .imgDiv > .login > .container > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > .imgDiv > .login > .onlyBtn > .x {
+  display: flex;
+  margin-bottom: 10px;
+  background: red;
+  border: none;
+  cursor: pointer;
+}
+
+/* sign up */
+
+main > .imgDiv > .sing-up {
+  background: white;
+  position: fixed;
+}
+
+main > .imgDiv > .sing-up > .container {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .imgDiv > .sing-up > .container > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main > .imgDiv > .sing-up > .onlyBtn > .x {
+  display: flex;
+  margin-bottom: 10px;
+  background: red;
+  border: none;
+  cursor: pointer;
+}
+
+/* btn style */
+
+.submit {
+  background: #00ffd9;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.submit:hover {
+  background: #04b59b;
+  transition: 0.3s;
+}
+
+/* Lorem info */
+
+.lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lorem2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}

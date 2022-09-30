@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Simskola</title>
+  </head>
+  <body>
+    <header>
+      <h1 style="user-select: none;">Simskola</h1>
+    </header>
+    <main>
+      <div class="imgDiv">
+        <img src="./img/simskola (5).jpeg" alt="Pool">
+
+        <!-- Data Buttons -->
+
+        <div class="input">
+          <button type="button" name="button" class="data-btn" id="loginBtn" onclick="loginPressed()">Login</button>
+          <button type="button" name="button" class="data-btn" id="signUpBtn" onclick="signUpPressed()">Sign Up</button>
+        </div>
+
+        <!-- Sign Up Button -->
+
+        <div class="sing-up" id="signUpPlatform" hidden>
+          <div class="onlyBtn">
+            <button type="button" name="button" class="x" onclick="x2Pressed()">X</button>
+          </div>
+          <div class="container">
+            <form method="post">
+              <div>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+              </div>
+              <div>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+              </div>
+              <div>
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" name="email"><br><br>
+              </div>
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+              </div>
+              <input type="submit" value="Sing Up" class="submit" onclick="signup()">
+              <p id="signUpResult">Sign Up section</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Login Button -->
+
+        <div class="login" id="loginPlatform" hidden>
+          <div class="onlyBtn">
+            <button type="button" name="button" class="x" onclick="xPressed()">X</button>
+          </div>
+          <div class="container">
+            <form method="post">
+              <div>
+                <label for="email">e-mail:</label>
+                <input type="email" id="email2" name="email"><br><br>
+              </div>
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password2" name="password"><br><br>
+              </div>
+              <input type="submit" value="Login" class="submit" onclick="loginFunc()">
+              <p id="result">Login Section</p>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <div class="lorem">
+      <div class="lorem2">
+        <h1>Badhuset</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
