@@ -3,8 +3,6 @@ const loginBtn = document.querySelector('#loginBtn')
 const signUpPlatform = document.querySelector('#signUpPlatform')
 const loginPlatform = document.querySelector('#loginPlatform')
 
-// Sing Up
-
 function signup(e) {
   event.preventDefault();
 
@@ -22,19 +20,8 @@ function signup(e) {
   };
 
   var json = JSON.stringify(user);
-
-  // Ignorera den här delen...
-
-  // if (json.firstname == null || json.firstname == '', json.lastname == null || json.lastname == '', json.email == null || json.email == '', json.password == null || json.password == '') {
-  //   signUpResult.innerHTML = 'Fill in everything'
-  //   return false;
-  // } else {
-    localStorage.setItem("user", json);
-  //   signUpResult.innerHTML = 'You are signed in, you can login now!'
-  // }
+  localStorage.setItem("user", json);
 }
-
-// Login
 
 function loginFunc(e) {
   event.preventDefault();
@@ -52,8 +39,6 @@ function loginFunc(e) {
     result.innerHTML = 'Wrong e-mail or password! Try again.';
   }
 }
-
-// Buttons
 
 function loginPressed() {
   loginPlatform.hidden = false

@@ -5,8 +5,6 @@ html, body {
   height: 100vh;
 }
 
-/* HEADER */
-
 header {
   display: flex;
   flex-direction: row;
@@ -17,16 +15,12 @@ header {
   z-index: 1;
 }
 
-/* MAIN */
-
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #23e3c9;
 }
-
-/* image */
 
 main > .imgDiv {
   display: flex;
@@ -43,8 +37,6 @@ main > .imgDiv > .input {
   flex-direction: column;
   position: absolute;
 }
-
-/* btn style */
 
 .data-btn {
   padding: 40px 100px;
@@ -64,8 +56,6 @@ main > .imgDiv > .input {
   background: #04b59b;
   transition: 0.3s;
 }
-
-/* login */
 
 main > .imgDiv > .login {
   background: white;
@@ -93,8 +83,6 @@ main > .imgDiv > .login > .onlyBtn > .x {
   cursor: pointer;
 }
 
-/* sign up */
-
 main > .imgDiv > .sing-up {
   background: white;
   position: fixed;
@@ -121,8 +109,6 @@ main > .imgDiv > .sing-up > .onlyBtn > .x {
   cursor: pointer;
 }
 
-/* btn style */
-
 .submit {
   background: #00ffd9;
   border: none;
@@ -135,8 +121,6 @@ main > .imgDiv > .sing-up > .onlyBtn > .x {
   background: #04b59b;
   transition: 0.3s;
 }
-
-/* Lorem info */
 
 .lorem {
   display: flex;
